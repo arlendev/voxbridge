@@ -127,7 +127,7 @@ btnSalvar.addEventListener("click", () => {
 
     console.log("📤 Enviando dados para o backend:", JSON.stringify(dados, null, 2));
 
-    fetch("http://localhost:3000/notas", {
+    fetch("https://voxbridge-backend.onrender.com/notas", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(dados)
