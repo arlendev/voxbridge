@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> VoxBridge </title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/faviconVoz.png">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div class="containerHeader">
+        <h2 class="appName"> VoxBridge </h2>
+      </div>
+    </header>
+
+    <main>
+      <div class="containerMain">
+
+        <div class="reconheceVoz">
+          <div class="linhaNome">
+            <label for="nomePaciente" class="labelNome">Nome do paciente:</label>
+            <input type="text" id="nomePaciente" class="inputNome" placeholder="Digite o nome do paciente">
+          </div>
+          <label class="labelText">Nota de voz ou Texto</label>
+          <textarea id="textareaFrom" rows="8" placeholder="Aperte no botão para gravar sua voz ou digite um texto"></textarea>
+          <div class="linhaIdioma">
+            <label for="langSelect" class="labelIdioma">Selecione a língua de entrada:</label>
+            <select id="langSelect" class="selectIdioma">
+              <option value="pt-BR">Português (Brasil)</option>
+              <option value="fr-FR">Francês (França)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="linhaBotoes">
+          <button id="btnGravar" class="botao" disabled title="Iniciar Gravação"><img src="assets/img/microfoneBlue-liga.png" alt="Gravar"></button>
+          <button id="btnParar" class="botao" disabled title="Parar Gravação"><img src="assets/img/microfoneBlue-deliga.png" alt="Parar"></button>
+          <button id="btnSalvar" class="botao" title="Salvar Nota"><img src="assets/img/save-icon.png" alt="Salvar"></button>
+          <button id="btnLimpar" class="botao" title="Limpar Campos"><img src="assets/img/lixoBlue.png" alt="Limpar"></button>
+          <button id="btnBuscar" class="botao" title="Buscar Notas"><img src="assets/img/pesquisa-blue.png" alt="Buscar"></button>
+        </div>
+
+        <div class="traduzTexto">
+          <div class="linhaData">
+            <label for="dataSessao" class="labelData">Data da sessão:</label>
+            <input type="date" id="dataSessao" class="inputData">
+          </div>
+          <label class="labelText">Tradução</label>
+          <textarea id="textareaTo" rows="8" placeholder="Tradução"></textarea>
+          <div class="seletores">
+            <label for="selectTo" class="labelIdioma">Selecione a língua de saída:</label>
+            <select class="selectTo" id="selectTo"></select>
+            <button class="botoes" id="btnTraduzir">TRADUZIR</button>
+          </div>
+        </div>
+
+        <script src="assets/js/reconhece-voz.js"></script>
+        <script src="assets/js/traduz-texto.js"></script>
+        
+      </div>
+    </main>
+
+    <footer>
+      <div class="containerFooter">
+        <div>
+          <ul class="social">
+            <li>
+              <p>Desenvolvido por arlenDev | 2022</p>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/arlen-possamai-9899791a9/" target="_blank">
+                <img src="assets/img/linkedinBlue.png" alt="LinkedIn"></a>
+            </li>
+            <li>
+              <a href="https://github.com/arlendev" target="_blank">
+                <img src="assets/img/githubBlue.png" alt="GitHub"></a>
+            </li>
+            <li>
+              <a href="https://arlendev.github.io/portfolio/" target="_blank">
+                <img src="assets/img/arlenBlue.png" alt="Portfolio"></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/arlen.possamai" target="_blank">
+                <img src="assets/img/facebookBlue.png" alt="Facebook"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- fecha container geral-->
+
+</body>
+
+</html>
