@@ -165,7 +165,7 @@ function buscarNotas() {
 
     console.log(`📤 Buscando notas para: ${nomePaciente}`);
 
-    fetch(`http://localhost:3000/notas/${encodeURIComponent(nomePaciente)}`)
+    fetch(`https://voxbridge-backend.onrender.com/notas/${encodeURIComponent(nomePaciente)}`)
     .then(response => {
         if (!response.ok) {
             throw new Error("Erro ao buscar notas.");
