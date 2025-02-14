@@ -138,6 +138,7 @@ body {
   height: 30rem;
   padding: 10px;
   box-shadow: 1px 1px 5px 1px grey;
+  resize: none;
 }
 
 /* Ajustes gerais para os botões */
